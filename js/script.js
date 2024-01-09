@@ -47,9 +47,12 @@
 
    }
 
+
    const optArticleSelector = '.post',
       optTitleSelector = '.post-title',
-      optTitleListSelector = '.titles';
+      optTitleListSelector = '.titles',
+      optArticleTagsSelector = '.post-tags .list';
+
 
    function generateTitleLinks() {
 
@@ -61,7 +64,7 @@
       titleList.innerHTML = '';
 
       /* for each article */
-         
+
       const articles = document.querySelectorAll(optArticleSelector);
 
       let html = '';
@@ -101,7 +104,7 @@
    function generateTags() {
       /* find all articles */
 
-
+      
 
       /* START LOOP: for every article: */
 
