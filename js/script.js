@@ -106,6 +106,7 @@
 
    generateTitleLinks();
 
+   
   function generateTags() {
     /* find all articles */
 
