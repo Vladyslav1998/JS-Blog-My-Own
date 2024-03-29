@@ -70,7 +70,6 @@
 
       for (let article of articles){
 
-
          /* get the article id */
 
          const articleId = article.getAttribute('Id');
@@ -106,16 +105,21 @@
 
    generateTitleLinks();
 
-   
+
   function generateTags() {
     /* find all articles */
 
+    const articles = document.querySelectorAll(optArticleSelector);
+    console.log("What I'v found: ", articles);
+
     /* START LOOP: for every article: */
 
+    for (let article of articles) {
+
       /* find tags wrapper */
-
+      const articleWrapper = article.querySelectorAll(optArticleTagsSelector);
       /* make html variable with empty string */
-
+      
       /* get tags from data-tags attribute */
 
       /* split tags into array */
@@ -129,7 +133,7 @@
       /* END LOOP: for each tag */
 
       /* insert HTML of all the links into the tags wrapper */
-
+  }
     /* END LOOP: for every article: */
   }
 
