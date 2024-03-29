@@ -44,7 +44,7 @@
 
       targetArticle.classList.add('active');
 
-   }
+   };
 
 
 
